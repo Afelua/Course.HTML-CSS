@@ -1,0 +1,426 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    background: #000;
+    color: #878787;
+    font-size: 14px;
+    line-height: 2;
+    padding: 13px 0;
+}
+
+.header__container{
+    width: 880px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 442px;
+    font-size: 11px;
+    margin: -2px 10px 0 0;
+}
+
+.intro{
+    background: url("./images/background.png") 50% 100%;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 70px 0;
+    height: 440px;
+}
+
+.intro__form{
+    background: #fff;
+    color: #a3a3a3;
+    font-size: 9px;
+    display: flex;
+    width: 540px;
+    margin: 100px auto 0;
+}
+
+.intro__input{
+    display: flex;
+    flex-direction: column;
+    padding: 23px 15px 20px;
+}
+
+.intro__input_first .intro__date{
+    margin: 0 0 0 36px;
+}
+
+.intro__input_second{
+    padding: 23px 15px 15px 11px;
+}
+
+.intro__input_third{
+    padding: 23px 55px 20px 0;
+}
+
+.intro__input_third .intro__date{
+    margin: 0 0 0 14px;
+}
+
+.intro__input_third .intro__text{
+    margin: 0 0 0 10px;
+}
+
+.intro__text{
+    font-size: 11px;
+}
+
+.intro__input_second .intro__text{
+    text-align: left;
+}
+
+.intro__container{
+    display: flex;
+    align-items: center;
+    margin: 6px 0 0;
+}
+
+.intro__button{
+    background: #1c1c1c;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 18px;
+}
+
+.intro__date{
+    font-size: 37.5px;
+    font-family: 'Gilda Display', serif;
+    width: 51px;
+    text-align: center;
+    height: 35px;
+}
+
+.intro__date:focus{
+    outline: none;
+}
+
+.intro__month{
+    font-size: 9px;
+    font-family: 'Gilda Display', serif;
+    border: none;
+    background: transparent;
+    margin: 5px 0 0 -4px;
+}
+
+.intro__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 52.5px;
+    margin: 28px auto 30px;
+    max-width: 700px;
+    line-height: 1.3;
+}
+
+.about{
+    color: #878787;
+    display: flex;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 87px 0;
+    justify-content: space-between;
+}
+
+.about__images{
+    position: relative;
+    width: 50%;
+}
+
+.about__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 60px;
+    margin: 16px auto 11px;
+    max-width: 700px;
+    line-height: 1;
+    color: #1c1c1c;
+}
+
+.about__img1{
+    width: 345px;
+    height: 230px;
+    position: absolute;
+    z-index: 1;
+    top: 162px;
+    left: -70px;
+}
+
+.about__img2{
+    width: 252px;
+    height: 341px;
+    position: absolute;
+    left: 248px;
+    z-index: 2;
+    top: 15px;
+}
+
+.about__img3{
+    width: 326px;
+    height: 218px;
+    position: absolute;
+    left: -27px;
+    top: -10px;
+}
+
+.about__container{
+    width: 608px;
+}
+
+.about__text{
+    color: #878787;
+    font-size: 10.5px;
+    line-height: 2;
+    width: 60%;
+    margin: 10px auto 25px;
+}
+
+.rooms__container{
+    background: #f9f9f9;
+    padding: 0 0 30px;
+}
+
+.rooms{
+    color: #878787;
+    padding: 49px 0 0;
+    width: 875px;
+    margin: 0 auto 0;
+}
+
+.rooms__title-container{
+    text-align: center;
+    margin: 0 0 37px;
+}
+
+.rooms__hr{
+    width: 20px;
+    margin: 4px auto;
+}
+
+.rooms_list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rooms__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 41.5px;
+    margin: 15px auto 11px;
+    max-width: 700px;
+    line-height: 1;
+    color: #1c1c1c;
+}
+.room__container{
+    display: flex;
+    width: 425px;
+    justify-content: space-between;
+}
+
+.room{
+    width: 203px;
+    height: 184px;
+    position: relative;
+}
+
+.room_big{
+    width: 428px;
+    height: 185px;
+}
+
+.room_small{
+    margin: 0 0 25px 0;
+}
+
+.room_adriatic{
+    background: url("images/rooms/adriatic.png");
+    background-size: cover;
+}
+
+.room_atelier{
+    background: url("images/rooms/atelier.png");
+    background-size: cover;
+}
+
+.room_piazza{
+    background: url("images/rooms/piazza.png");
+    background-size: cover;
+}
+
+.room_gallery{
+    background: url("images/rooms/gallery.png");
+    background-size: cover;
+}
+
+.room_grand_piazza{
+    background: url("images/rooms/grand-piazza.png");
+    background-size: cover;
+}
+
+.room__title{
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #fff;
+    position: absolute;
+    bottom: 15px;
+    left: 22px;
+}
+
+.room__description{
+    background: #fff;
+    padding: 27px 23px;
+}
+
+.room__subtitle{
+    font-family: 'Gilda Display', serif;
+    font-size: 22.5px;
+    line-height: 0.8;
+    color: #000;
+}
+
+.room__benefits{
+    text-transform: uppercase;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    margin: 12px 0 0;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.room__benefit-item{
+    display: flex;
+    align-items: center;
+}
+
+.room__benefit{
+    margin: 0 0 0 6px;
+}
+
+.room-big{
+    width: 428px;
+}
+
+.room__rating{
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    font-size: 8.5px;
+}
+
+.room__text{
+    line-height: 2;
+    margin: 17px 0;
+    font-size: 10.5px;
+    width: 80%;
+}
+
+.benefits{
+    border-top: 1px solid;
+    background: #1c1c1c;
+}
+
+.benefits__container{
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+    max-height: 484px;
+}
+
+.benefits__images{
+    display: flex;
+    width: 50%;
+}
+
+.benefits__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 60px;
+    margin: 8px auto 11px;
+    max-width: 700px;
+    line-height: 1;
+    color: #fff;
+}
+
+.benefits_image{
+    width: 360px;
+    height: 240px;
+}
+
+.benefit{
+    width: 50%;
+    padding: 65px 75px;
+    box-sizing: border-box;
+}
+
+.benefit__text{
+    color: #878787;
+    font-size: 10.5px;
+    line-height: 2;
+    margin: 28px auto 50px;
+    column-count: 2;
+}
+.subtitle{
+    font-size: 10.5px;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 1.16px;
+}
+
+.short-info{
+    font-family: 'Gilda Display', serif;
+    font-size: 19px;
+    line-height: 1.8;
+    width: 700px;
+    color: #1c1c1c;
+    margin: 48px auto 40px;
+    text-align: center;
+}
+
+.footer{
+    background: #151515;
+    color: #fff;
+    font-size: 12px;
+    padding: 28px 22px;
+}
+
+.footer__menu{
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 18.7%;
+}
+
+.subtitle_white{
+    color: #fff;
+}
+
+.title_yellow{
+    color: #c19b76;
+}
+
+.button{
+    font-size: 8.5px;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 9px 24px;
+    background: transparent;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+}
+
+
+.button_yellow{
+    border: 2px solid #c19b76;
+    background: #c19b76;
+}
+
+.button_black{
+    border: 2px solid #151515;
+    background: #151515;
+}
