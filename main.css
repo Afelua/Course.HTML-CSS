@@ -1,11 +1,9 @@
 .intro{
-    background: url("images/background/background.png") 50% 100%;
-    background-size: cover;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    padding: 70px 0;
-    height: 440px;
+    background: url("images/background/background.png") 50% 100%;
+    background-size: cover;
 }
 
 .intro__form{
@@ -13,8 +11,10 @@
     color: #a3a3a3;
     font-size: 9px;
     display: flex;
-    width: 540px;
-    margin: 100px auto 0;
+}
+
+.intro__text{
+    font-size: 11px;
 }
 
 .intro__input{
@@ -23,45 +23,10 @@
     padding: 23px 15px 20px;
 }
 
-.intro__input_first .intro__date{
-    margin: 0 0 0 36px;
-}
-
-.intro__input_second{
-    padding: 23px 15px 15px 11px;
-}
-
-.intro__input_third{
-    padding: 23px 55px 20px 0;
-}
-
-.intro__input_third .intro__date{
-    margin: 0 0 0 14px;
-}
-
-.intro__input_third .intro__text{
-    margin: 0 0 0 10px;
-}
-
-.intro__text{
-    font-size: 11px;
-}
-
-.intro__input_second .intro__text{
-    text-align: left;
-}
-
-.intro__container{
-    display: flex;
-    align-items: center;
-    margin: 6px 0 0;
-}
-
 .intro__button{
     background: #1c1c1c;
     color: #fff;
     text-transform: uppercase;
-    padding: 45px 25px;
     text-decoration: none;
 }
 
@@ -78,127 +43,79 @@
 }
 
 .intro__month{
-    font-size: 9px;
     font-family: 'Gilda Display', serif;
     border: none;
     background: transparent;
-    margin: 5px 0 0 -4px;
 }
 
 .intro__title{
     font-family: 'Gilda Display', serif;
-    font-size: 52.5px;
-    margin: 28px auto 30px;
     max-width: 700px;
-    line-height: 1.3;
 }
 
 .about{
     color: #878787;
-    display: flex;
-    width: 1000px;
     margin: 0 auto;
     text-align: center;
-    padding: 87px 0;
     justify-content: space-between;
 }
 
 .about__images{
     position: relative;
-    width: 50%;
 }
 
 .about__title{
     font-family: 'Gilda Display', serif;
-    font-size: 60px;
-    margin: 16px auto 11px;
     max-width: 700px;
     line-height: 1;
     color: #1c1c1c;
 }
 
 .about__img1{
-    width: 345px;
-    height: 230px;
     position: absolute;
     z-index: 1;
-    top: 162px;
-    left: -70px;
 }
 
 .about__img2{
-    width: 252px;
-    height: 341px;
     position: absolute;
-    left: 248px;
     z-index: 2;
-    top: 15px;
 }
 
 .about__img3{
-    width: 326px;
-    height: 218px;
     position: absolute;
-    left: -27px;
-    top: -10px;
 }
 
 .about__container{
-    width: 608px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .about__text{
     color: #878787;
-    font-size: 10.5px;
-    line-height: 2;
-    width: 60%;
-    margin: 10px auto 25px;
 }
 
 .rooms__container{
     background: #f9f9f9;
-    padding: 0 0 30px;
 }
 
 .rooms{
     color: #878787;
-    padding: 49px 0 0;
-    width: 875px;
     margin: 0 auto 0;
-}
-
-.rooms__title-container{
-    text-align: center;
-    margin: 0 0 37px;
 }
 
 .rooms__hr{
     width: 20px;
-    margin: 4px auto;
 }
 
 .rooms_list{
     display: flex;
-    justify-content: space-between;
 }
 
 .rooms__title{
-    font-family: 'Gilda Display', serif;
-    font-size: 41.5px;
-    margin: 15px auto 11px;
-    max-width: 700px;
-    line-height: 1;
-    color: #1c1c1c;
-}
-.room__container{
-    display: flex;
-    width: 425px;
-    justify-content: space-between;
-}
-
-.room-big{
-    width: 428px;
-}
+     font-family: 'Gilda Display', serif;
+     line-height: 1;
+     color: #1c1c1c;
+ }
 
 .room-big__link{
     display: block;
@@ -217,41 +134,523 @@
 }
 
 .benefits__container{
-    max-width: 1440px;
-    display: flex;
     margin: 0 auto;
-    max-height: 484px;
 }
 
 .benefits__images{
     display: flex;
-    width: 50%;
 }
 
 .benefits__title{
     font-family: 'Gilda Display', serif;
-    font-size: 60px;
-    margin: 8px auto 11px;
     max-width: 700px;
     line-height: 1;
     color: #fff;
 }
 
-.benefits_image{
-    width: 360px;
-    height: 240px;
-}
-
 .benefit{
-    width: 50%;
-    padding: 65px 75px;
     box-sizing: border-box;
 }
 
 .benefit__text{
     color: #878787;
-    font-size: 10.5px;
-    line-height: 2;
-    margin: 28px auto 50px;
-    column-count: 2;
+}
+
+@media screen and (max-width: 1023px) {
+    .intro{
+        height: 202px;
+        position: relative;
+    }
+
+    .intro .subtitle{
+        display: none;
+    }
+
+    .intro__title{
+        font-size: 32px;
+        width: 50%;
+        margin: 0 auto;
+        line-height: 1.4;
+        padding: 22px 0 32px;
+    }
+
+    .intro__form{
+        position: absolute;
+        border: 1px solid #a3a3a3;
+        width: 82%;
+        left: 9%;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0 0 66px 0;
+        bottom: -267px;
+    }
+
+    .intro__input{
+        width: 33.3%;
+    }
+
+    .intro__text{
+        font-size: 14px;
+    }
+
+    .intro__date{
+        margin: 12px 0 0;
+    }
+
+    .intro__month{
+        display: block;
+        margin: 10px auto 0;
+        font-size: 20px;
+    }
+
+    .intro__button{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 25px 15px;
+        border: 1px solid #1c1c1c;
+        font-size: 22px;
+    }
+
+    .about{
+        margin: 312px auto 0;
+    }
+
+    .about__title{
+        font-size: 36px;
+        margin: 20px auto;
+    }
+
+    .about__text{
+        font-size: 22px;
+        margin: 0 auto 32px;
+        width: 73%;
+        line-height: 1.95;
+    }
+
+    .about__images{
+        width: 640px;
+        margin: 0 auto;
+        height: 330px;
+        overflow: hidden;
+    }
+
+    .about__img1{
+        width: 298px;
+        height: 198px;
+        left: 0;
+        top: 68px;
+    }
+
+    .about__img2{
+        width: 213px;
+        height: 286px;
+        top: 6px;
+        left: 425px;
+    }
+
+    .about__img3{
+        width: 280px;
+        height: 187px;
+        top: 123px;
+        left: 230px;
+    }
+
+    .rooms__container{
+        text-align: center;
+    }
+
+    .rooms{
+        width: 100%;
+    }
+
+    .rooms__title-container{
+        padding: 10px 0 45px;
+    }
+
+    .rooms__hr{
+        display: none;
+    }
+
+    .rooms__title{
+        font-size: 36px;
+    }
+
+    .rooms_list{
+        justify-content: normal;
+        flex-direction: column;
+    }
+
+    .room__container{
+        width: 430px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .benefits_image{
+        width: 50%;
+        height: 105px;
+    }
+
+    .benefits__images div{
+        display: flex;
+    }
+
+    .benefits{
+        margin: 12px 0 0;
+    }
+
+    .benefit{
+        text-align: center;
+        margin: 28px 0 0;
+        padding: 0 0 45px;
+    }
+
+    .benefits__title{
+        font-size: 32px;
+        margin: 12px 0 0;
+    }
+
+    .benefit__text{
+        font-size: 22px;
+        line-height: 1.7;
+        margin: 28px auto 38px;
+        width: 79%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px){
+    .intro__input_third .intro__date{
+        margin: 0 0 0 14px;
+    }
+
+    .intro__input_third .intro__text{
+        margin: 0 0 0 10px;
+    }
+
+    .about{
+        display: flex;
+        padding: 87px 0;
+    }
+
+    .about__images{
+        width: 50%;
+    }
+
+    .rooms{
+        width: 875px;
+    }
+
+    .rooms_list{
+        justify-content: space-between;
+    }
+
+    .room__container{
+        display: flex;
+        width: 425px;
+        justify-content: space-between;
+    }
+
+    .benefits__images{
+        width: 50%;
+    }
+
+    .benefit{
+        width: 50%;
+    }
+
+    .benefits__container{
+        display: flex;
+        max-height: 484px;
+    }
+
+    .benefit__text{
+        column-count: 2;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .intro{
+        padding: 60px 0;
+        height: 140px;
+        background: url(images/background/background.png) 50% 67%;
+        background-size: cover;
+    }
+
+    .intro__title{
+        font-size: 32px;
+        line-height: 1;
+        margin: 25px auto 30px;
+    }
+
+    .intro__form{
+        margin: 80px auto 0;
+        width: 400px;
+        padding: 18px 0 0 0;
+    }
+
+    .intro__input_first{
+        padding: 0 15px 0;
+    }
+
+    .intro__input_second{
+        padding: 0 15px 0 11px;
+    }
+
+    .intro__input_third{
+        padding: 0 55px 0 0;
+    }
+
+    .intro__container{
+        display: block;
+        margin: 4px 0 0;
+    }
+
+    .intro__button{
+        line-height: 20px;
+        padding: 20px 15px;
+        margin: -5px 0;
+        font-size: 10px;
+    }
+
+    .about__title{
+        font-size: 43px;
+        margin: 10px auto 11px;
+    }
+
+    .about{
+        margin: 52px 0 0 0;
+    }
+
+    .about__container{
+        padding: 0 0 0 105px;
+    }
+
+    .about__text{
+        font-size: 9px;
+        line-height: 1.8;
+        margin: 10px auto 17px;
+        width: 50%;
+    }
+
+    .about__img1{
+        width: 245px;
+        height: 164px;
+        top: 117px;
+        left: -100px;
+    }
+
+    .about__img2{
+        width: 179px;
+        height: 242px;
+        left: 125px;
+        top: 15px;
+    }
+
+    .about__img3{
+        width: 232px;
+        height: 155px;
+        left: -70px;
+        top: -4px;
+    }
+
+    .rooms{
+        padding: 28px 0 0;
+    }
+
+    .rooms__title-container{
+        margin: 0 0 25px;
+        text-align: center;
+
+    }
+
+    .rooms__title{
+        font-size: 30px;
+        margin: 10px auto;
+        max-width: 700px;
+    }
+
+    .rooms_list{
+        width: 71%;
+        margin: 0 auto;
+    }
+
+    .room-big{
+        width: 305px;
+    }
+
+    .rooms__hr{
+        margin: 0 auto;
+    }
+
+    .room__container{
+        width: 305px;
+    }
+
+    .rooms__container{
+        padding: 0 0 22px;
+    }
+
+    .benefits_image{
+        width: 257px;
+        height: 168px;
+    }
+
+    .benefit{
+        padding: 43px 53px 35px;
+    }
+
+    .benefits__title{
+        font-size: 43px;
+        margin: 4px auto 11px;
+    }
+
+    .benefit__text{
+        margin: 20px auto 15px;
+        font-size: 9px;
+        line-height: 2;
+    }
+
+    .benefits__container{
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .intro{
+        padding: 70px 0;
+        height: 440px;
+    }
+
+    .intro__title{
+        font-size: 52.5px;
+        margin: 28px auto 30px;
+        line-height: 1.3;
+    }
+
+    .intro__input_first .intro__date{
+        margin: 0 0 0 36px;
+    }
+
+    .intro__input_second .intro__text{
+        text-align: left;
+    }
+
+    .intro__input_second{
+        padding: 23px 15px 15px 11px;
+    }
+
+    .intro__input_third{
+        padding: 23px 55px 20px 0;
+    }
+
+    .intro__form{
+        width: 540px;
+        margin: 100px auto 0;
+    }
+
+    .intro__container{
+        display: flex;
+        align-items: center;
+        margin: 6px 0 0;
+    }
+
+    .intro__button{
+        padding: 45px 25px;
+    }
+
+    .about{
+        width: 1000px;
+    }
+
+    .about__title{
+        font-size: 60px;
+        margin: 16px auto 11px;
+    }
+
+    .about__text{
+        font-size: 10.5px;
+        line-height: 2;
+        margin: 10px auto 25px;
+        width: 60%;
+    }
+
+    .about__img1{
+        width: 345px;
+        height: 230px;
+        top: 162px;
+        left: -70px;
+    }
+
+    .about__img2{
+        width: 252px;
+        height: 341px;
+        left: 248px;
+        top: 15px;
+    }
+
+    .about__img3{
+        width: 326px;
+        height: 218px;
+        left: -27px;
+        top: -10px;
+    }
+
+    .rooms__hr{
+        margin: 4px auto;
+    }
+
+    .rooms{
+        padding: 49px 0 0;
+    }
+
+    .rooms__title-container{
+        text-align: center;
+        margin: 0 0 37px;
+    }
+
+    .rooms__title{
+        font-size: 41.5px;
+        margin: 15px auto 11px;
+    }
+
+    .room-big{
+        width: 428px;
+    }
+
+    .rooms__container{
+        background: #f9f9f9;
+        padding: 0 0 30px;
+    }
+
+    .benefits_image{
+        width: 360px;
+        height: 240px;
+    }
+
+    .benefit{
+        padding: 65px 75px;
+    }
+
+    .benefits__title{
+        font-size: 60px;
+        margin: 8px auto 11px;
+    }
+
+    .benefit__text{
+        font-size: 10.5px;
+        line-height: 2;
+        margin: 28px auto 50px;
+    }
+
+    .benefits__container{
+        max-width: 1440px;
+    }
+
+    .intro__month{
+        font-size: 9px;
+        margin: 5px 0 0 -4px;
+    }
 }

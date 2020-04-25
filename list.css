@@ -4,74 +4,43 @@
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    padding: 70px 0;
-    height: 150px;
 }
 
 .search-intro__title{
     font-family: 'Gilda Display', serif;
-    font-size: 52.5px;
-    margin: 28px auto 30px;
     line-height: 1.3;
-}
-
-.search{
-    display: flex;
-    max-width: 880px;
-    margin: 32px auto 77px;
-}
-
-.search__right{
-    display: flex;
-    margin: 0 0 0 25px;
 }
 
 .form{
     background: #000;
     color: #fff;
     text-align: center;
-    padding: 37px 32px 32px;
     box-sizing: border-box;
-    width: 278px;
 }
 
 .form__container{
     display: flex;
-    margin: 50px auto 0;
-    width: 100%;
     justify-content: space-between;
 }
 
 .form__label{
-    font-size: 10px;
     text-transform: uppercase;
     display: block;
     letter-spacing: 0.72px;
 }
 
-.form__row{
-    display: flex;
-    margin: 0 0 40px 0;
-}
-
 .form__month{
-    font-size: 9px;
     font-family: 'Gilda Display', serif;
     border: none;
     background: transparent;
-    margin: 5px 0 0 -4px;
     color: #c19b76;
 }
 
 .form__input{
-    font-size: 37.5px;
     color: #c19b76;
     border: none;
     font-family: 'Gilda Display', serif;
-    width: 40px;
     background: transparent;
-    line-height: 1.5;
-    padding: 0 0 0 12px;
 }
 
 .form__input::placeholder {
@@ -83,16 +52,6 @@
     margin: 18px 0 0 0;
 }
 
-.filter-item{
-    border-bottom: 1px solid #f9f9f9;
-    border-top: 1px solid #f9f9f9;
-    padding: 24px 0 14px;
-}
-
-.filter-item_room{
-    padding: 24px 0 30px;
-}
-
 .filter-item__title{
     font-size: 20px;
 }
@@ -100,15 +59,11 @@
 .filter-item__row{
     display: flex;
     color: #878787;
-    font-size: 10.5px;
     line-height: 2;
-    margin: 8px 0;
     justify-content: space-between;
-    width: 94%;
 }
 
 .size{
-    font-size: 9px;
     text-transform: uppercase;
     color: #878787;
 }
@@ -116,11 +71,7 @@
 .size__input{
     color: #ffffff;
     background: #1c1c1c;
-    font-size: 9.5px;
-    width: 47px;
     border: none;
-    height: 23px;
-    margin: 14px 0 0 2px;
     padding: 0 0 0 7px;
     box-sizing: border-box;
 }
@@ -129,21 +80,7 @@
     color: #ffffff;
 }
 
-.size__input_from{
-    margin: 14px 9px 0 2px;
-}
-
-.size__input_to{
-    margin: 14px 10px 0 6px;
-}
-
-.services__item{
-    margin: 0 0 0 1px;
-}
-
 .services__checkbox{
-    width: 10px;
-    height: 10px;
     border-radius: 1.1px;
     border: solid 0.4px #b3b3b3;
     margin: 0;
@@ -151,24 +88,18 @@
 
 .services__label{
     letter-spacing: 0.63px;
-    padding: 0 0 0 8px;
 }
 
 .reviews{
     display: flex;
     justify-content: space-between;
-    margin: 13px 0;
-    width: 84%;
 }
 
 .reviews__item{
-    width: 30px;
     color: #ffffff;
     background: #1c1c1c;
-    font-size: 9.5px;
     transition: all 0.3s;
     text-align: center;
-    padding: 8px 0;
 }
 
 .reviews__item:hover{
@@ -177,7 +108,388 @@
 
 .search__title{
     font-family: 'Gilda Display', serif;
-    font-size: 15px;
     line-height: 1.3;
     letter-spacing: 0.9px;
+}
+
+@media screen and (max-width: 1023px) {
+    .search-intro{
+        height: 205px;
+    }
+
+    .search-intro__title{
+        font-size: 48px;
+        padding: 70px 0;
+    }
+
+    .form{
+        width: 82%;
+        margin: 30px auto;
+        padding: 10px 10px;
+    }
+
+    .search__title{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .search__right{
+        margin: 20px 0 50px;
+    }
+
+    .search__container{
+        width: 82%;
+        margin: 8px auto;
+    }
+
+    .search .room{
+        display: flex;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+
+    .search .room_border:nth-child(2){
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    .search .room_border:nth-child(2) .room_middle{
+        margin: 0 0 0 25px;
+    }
+
+    .search .room_border:nth-child(2) .room__description{
+        padding: 3px 0;
+    }
+
+    .filter-item__row{
+        width: 70%;
+        margin: 12px auto;
+    }
+
+    .form__container{
+        width: 70%;
+        margin: 12px auto;
+    }
+
+    .form__label{
+        font-size: 14px;
+    }
+
+    .form__row{
+        display: block;
+        margin: 0 0 20px;
+    }
+
+    .form__input{
+        font-size: 36px;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        line-height: 1.3;
+    }
+
+    .form__month{
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+    }
+
+    .services__item{
+        margin: 0 0 4px 0;
+    }
+
+    .services__checkbox{
+        width: 14px;
+        height: 14px;
+    }
+
+    .services__label{
+        padding: 0 0 0 5px;
+    }
+
+    .filter-item_room{
+        padding: 8px 0 42px;
+    }
+
+    .size{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .size__input{
+        width: 69px;
+        margin: 11px 15px 0 2px;
+        height: 27px;
+        font-size: 14px;
+    }
+
+    .size__input_to{
+        margin: 6px 10px 0 15px;
+    }
+
+    .reviews{
+        width: 66%;
+        margin: 10px auto;
+    }
+
+    .reviews__item{
+        padding: 4px 15px;
+    }
+
+    .room_middle{
+        width: 198px;
+        height: 133px;
+    }
+
+    .room_middle .room__title{
+        font-size: 14px;
+        bottom: 12px;
+        left: 15px;
+    }
+
+    .room__description{
+        width: 50%;
+        padding: 3px 25px;
+    }
+
+    .room_border .room__benefits{
+        display: none;
+    }
+
+    .room_border .button{
+        font-size: 9px;
+        padding: 4px 7px 4px;
+    }
+
+    .room__subtitle{
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    .search{
+        display: flex;
+        margin: 32px auto 77px;
+    }
+
+    .search__right{
+        display: flex;
+    }
+
+    .form__container{
+        width: 100%;
+    }
+
+    .form__label {
+        font-size: 10px;
+    }
+
+    .form__row{
+        display: flex;
+    }
+
+    .form__input{
+        line-height: 1.5;
+        padding: 0 0 0 12px;
+    }
+
+    .form__month{
+        font-size: 9px;
+    }
+
+    .filter-item{
+        border-bottom: 1px solid #f9f9f9;
+        border-top: 1px solid #f9f9f9;
+    }
+
+    .services__item{
+        margin: 0 0 0 1px;
+    }
+
+    .services__checkbox{
+        width: 10px;
+        height: 10px;
+    }
+
+    .filter-item_room{
+        padding: 24px 0 30px;
+    }
+
+    .size__input{
+        font-size: 9.5px;
+        width: 47px;
+        height: 23px;
+        margin: 14px 0 0 2px;
+    }
+
+    .search__right .search__title{
+        display: none;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .search-intro{
+        height: 46px;
+        padding: 50px 0;
+    }
+
+    .search-intro__title{
+        font-size: 32px;
+        margin: 10px auto 30px;
+    }
+
+    .search{
+        max-width: 625px;
+        margin: 35px auto 77px;
+    }
+
+    .form{
+        width: 208px;
+        padding: 25px 20px 22px;
+    }
+
+    .search__title{
+        font-size: 11px;
+    }
+
+    .form__container{
+        margin: 32px auto 0;
+    }
+
+    .form__row{
+        margin: 0 0 24px 0;
+    }
+
+    .form__input{
+        font-size: 28px;
+        width: 30px;
+    }
+
+    .filter-item{
+        padding: 10px 0 14px;
+    }
+
+    .filter-item__row{
+        font-size: 9px;
+        width: 97%;
+        margin: 5px 0;
+    }
+
+    .services__label{
+        padding: 0 0 0 3px;
+    }
+
+    .size{
+        font-size: 6.5px;
+    }
+
+    .size__input{
+        margin: 10px 7px 0 0;
+        font-size: 8px;
+        width: 35px;
+        height: 17px;
+    }
+
+    .size__input_to{
+        margin: 10px 7px 0 6px;
+    }
+
+    .reviews{
+        margin: 10px 0;
+        width: 80%;
+    }
+
+    .reviews__item{
+        width: 20px;
+        padding: 4px 0;
+        font-size: 8px;
+    }
+
+    .search__right{
+        margin: 0 0 0 15px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .search-intro{
+        padding: 70px 0;
+        height: 150px;
+    }
+
+    .search-intro__title{
+        font-size: 52.5px;
+        margin: 28px auto 30px;
+    }
+
+    .form__month{
+        margin: 5px 0 0 -4px;
+    }
+
+    .search{
+        max-width: 880px;
+    }
+
+    .form{
+        padding: 37px 32px 32px;
+        width: 278px;
+    }
+
+    .search__title{
+        font-size: 15px;
+    }
+
+    .form__container{
+        margin: 50px auto 0;
+    }
+
+    .form__row{
+        margin: 0 0 40px 0;
+    }
+
+    .form__input{
+        font-size: 37.5px;
+        width: 40px;
+    }
+
+    .filter-item{
+        padding: 24px 0 14px;
+    }
+
+    .filter-item__row{
+        font-size: 10.5px;
+        margin: 8px 0;
+        width: 94%;
+    }
+
+    .services__label{
+        padding: 0 0 0 8px;
+    }
+
+    .size{
+        font-size: 9px;
+    }
+
+    .size__input_from{
+        margin: 14px 9px 0 2px;
+    }
+
+    .size__input_to{
+        margin: 14px 10px 0 6px;
+    }
+
+    .reviews{
+        margin: 13px 0;
+        width: 84%;
+    }
+
+    .reviews__item{
+        width: 30px;
+        font-size: 9.5px;
+        padding: 8px 0;
+    }
+
+    .search__right{
+        margin: 0 0 0 25px;
+    }
+
 }

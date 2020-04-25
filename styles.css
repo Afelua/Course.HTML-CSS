@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif;
+    min-width: 640px;
 }
 
 .header{
@@ -7,11 +8,9 @@ body{
     color: #878787;
     font-size: 14px;
     line-height: 2;
-    padding: 13px 0;
 }
 
 .header__container{
-    width: 880px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -34,22 +33,6 @@ body{
     position: relative;
     display: block;
     text-decoration: none;
-}
-
-.room_big{
-    width: 428px;
-    height: 185px;
-}
-
-.room_middle{
-    width: 278px;
-    height: 186px;
-}
-
-.room_small{
-    width: 203px;
-    height: 184px;
-    margin: 0 0 25px 0;
 }
 
 .room_page{
@@ -87,25 +70,14 @@ body{
     font-size: 11px;
     color: #fff;
     position: absolute;
-    bottom: 15px;
-    left: 22px;
 }
 
 .room__description{
     background: #fff;
 }
 
-.room__description_big{
-    padding: 27px 23px;
-}
-
-.room__description_small{
-    padding: 23px 20px 27px;
-}
-
 .room__subtitle{
     font-family: 'Gilda Display', serif;
-    font-size: 22.5px;
     line-height: 0.8;
     color: #000;
 }
@@ -115,72 +87,37 @@ body{
     align-items: center;
 }
 
-.room__benefit{
-    margin: 0 0 0 6px;
-}
 
 .room__benefits{
     text-transform: uppercase;
-    font-size: 10px;
     display: flex;
     align-items: center;
-    margin: 12px 0 0;
     justify-content: space-between;
 }
 
-.room__benefits_small{
-    width: 60%;
-}
-
-.room__benefits_big{
-    width: 96%;
-}
-
 .room__text{
-    line-height: 2;
-    font-size: 10.5px;
     color: #878787;
-}
-
-.room__text_main{
-    width: 80%;
-    margin: 17px 0;
-}
-
-.room__text_list{
-    width: 93%;
-    margin: 14px 0;
+    width: 87%;
 }
 
 .room_border{
     border: 1px solid #f1f1f1;
-    width: 278px;
-    margin: 0 18px 30px 0;
     color: #878787;
 }
 
 .room__rating{
     background: #000;
     color: #fff;
-    padding: 5px;
-    font-size: 8.5px;
 }
 
-
 .subtitle{
-    font-size: 10.5px;
     line-height: 2;
     text-transform: uppercase;
-    letter-spacing: 1.16px;
 }
 
 .short-info{
     font-family: 'Gilda Display', serif;
-    font-size: 19px;
-    line-height: 1.8;
-    width: 700px;
     color: #1c1c1c;
-    margin: 48px auto 40px;
     text-align: center;
 }
 
@@ -188,14 +125,16 @@ body{
     background: #151515;
     color: #fff;
     font-size: 12px;
-    padding: 28px 22px;
 }
 
 .footer__menu{
-    width: 330px;
     display: flex;
     justify-content: space-between;
-    margin: 0 18.7%;
+}
+
+.footer__menu a{
+    color: #fff;
+    text-decoration: none;
 }
 
 .subtitle_white{
@@ -207,11 +146,9 @@ body{
 }
 
 .button{
-    font-size: 8.5px;
     text-transform: uppercase;
     border: 2px solid #fff;
     color: #fff;
-    padding: 9px 24px;
     background: transparent;
     font-weight: 900;
     letter-spacing: 0.85px;
@@ -236,4 +173,347 @@ body{
 
 .button_big{
     width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__navigation{
+        display: none;
+    }
+
+    .header__logo{
+        height: 26px;
+    }
+
+    .header{
+        height: 36px;
+    }
+
+    .header__container{
+        width: 85%;
+        padding: 11px 0 0;
+    }
+
+    .header__menu{
+        position: absolute;
+        right: 55px;
+        top: 8px;
+    }
+
+    .button{
+        padding: 15px 40px;
+        font-size: 18px;
+        min-width: 52%;
+    }
+
+    .subtitle{
+        font-size: 18px;
+    }
+
+    .rooms_list .room{
+        width: 430px;
+        height: 187px;
+        margin: 0 auto 25px;
+    }
+
+    .room__title{
+        bottom: 17px;
+        left: 22px;
+        font-size: 18px;
+        letter-spacing: 1.8px;
+    }
+
+    .rooms_list .room__description{
+        display: none;
+    }
+
+    .room__container ul:nth-child(2){
+        display: none;
+    }
+
+    .short-info{
+        margin: 15px 0 12px;
+        line-height: 1.7;
+    }
+
+    .footer{
+        padding: 13px 48px;
+        font-size: 16px;
+    }
+
+    .footer__menu{
+        width: 408px;
+    }
+
+    .room__text_list{
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px 0 6px;
+    }
+
+    .room_border{
+        margin: 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header__menu{
+        display: none;
+    }
+
+    .short-info{
+        line-height: 1.8;
+        width: 700px;
+    }
+
+    .footer__menu{
+        width: 330px;
+    }
+
+    .room__text_list{
+        margin: 14px 0;
+    }
+
+    .room__text_list{
+        margin: 14px 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .header{
+        padding: 13px 0 6px;
+    }
+
+    .header__container{
+        width: 985px;
+        padding: 0 0 0 180px;
+        box-sizing: border-box;
+    }
+
+    .header__logo{
+        width: 122px;
+        height: 17px;
+    }
+
+    .header__navigation{
+        width: 438px;
+        margin: -4px 0 0 0;
+    }
+
+    .subtitle{
+        font-size: 10px;
+        letter-spacing: 1.7px;
+    }
+
+
+    .button{
+        font-size: 9px;
+        padding: 6px 28px;
+    }
+
+    .room_big{
+        width: 305px;
+        height: 132px;
+    }
+
+    .room__title{
+        bottom: 9px;
+        left: 15px;
+    }
+
+    .room__description_big{
+        padding: 22px 15px 11px;
+    }
+
+    .room__subtitle{
+        font-size: 16px;
+    }
+
+    .room__benefits_small{
+        width: 68%;
+        font-size: 7px;
+        margin: 12px 0 0;
+    }
+
+    .room__rating{
+        font-size: 8px;
+        padding: 3px 5px;
+    }
+
+    .room__benefit_user{
+        width: 12px;
+    }
+
+    .room__benefit_square{
+        width: 11px;
+    }
+
+    .room__text_main{
+        width: 83%;
+        margin: 6px 0 8px;
+        font-size: 9px;
+    }
+
+    .room_small{
+        width: 146px;
+        height: 132px;
+        margin: 0 0 17px 0;
+    }
+
+    .short-info{
+        font-size: 13.5px;
+        margin: 54px auto 43px;
+    }
+
+    .footer{
+        padding: 18px 35px;
+    }
+
+    .footer__menu{
+        margin: 0 17%;
+    }
+
+    .room_border{
+        margin: 0 14px 20px 0;
+        width: 198px;
+        min-height: 321px;
+    }
+
+    .room__description_small{
+        padding: 14px 15px 28px;
+    }
+
+    .room__benefits{
+        font-size: 7px;
+        margin: 10px 3px 0;
+    }
+
+    .room__benefit{
+        margin: 0 0 0 8px;
+    }
+
+    .room_middle{
+        width: 198px;
+        height: 133px;
+    }
+
+    .room__text{
+        font-size: 8px;
+        margin: 8px 0;
+        line-height: 2.3;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .header{
+        padding: 13px 0;
+    }
+
+    .header__container{
+        width: 880px;
+    }
+
+    .header__logo{
+        width: 122px;
+        height: 17px;
+    }
+
+    .header__navigation{
+        width: 438px;
+        margin: -4px 0 0 0;
+    }
+
+    .subtitle{
+        font-size: 10.5px;
+        letter-spacing: 1.16px;
+    }
+
+    .button{
+        font-size: 8.5px;
+        padding: 9px 24px;
+    }
+
+    .room_big{
+        width: 428px;
+        height: 185px;
+    }
+
+    .room__title{
+        bottom: 15px;
+        left: 22px;
+    }
+
+    .room__description_big{
+        padding: 27px 23px;
+    }
+
+    .room__subtitle{
+        font-size: 22.5px;
+    }
+
+    .room__benefits_small{
+        width: 60%;
+    }
+
+    .room__rating{
+        padding: 5px;
+        font-size: 8.5px;
+    }
+
+    .room__text_main{
+        width: 80%;
+        margin: 17px 0;
+    }
+
+    .room_small{
+        width: 203px;
+        height: 184px;
+        margin: 0 0 25px 0;
+    }
+
+    .short-info{
+        font-size: 19px;
+        margin: 48px auto 40px;
+    }
+
+    .footer{
+        padding: 28px 22px;
+    }
+
+    .footer__menu{
+        margin: 0 18.7%;
+    }
+
+    .room_border{
+        margin: 0 18px 30px 0;
+        width: 278px;
+    }
+
+    .room__description_small{
+        padding: 23px 20px 27px;
+    }
+
+    .room__benefits{
+        font-size: 10px;
+        margin: 12px 0 0;
+    }
+
+    .room__benefit{
+        margin: 0 0 0 6px;
+    }
+
+    .room_middle{
+        width: 278px;
+        height: 186px;
+    }
+
+    .room__benefits_big{
+        width: 96%;
+    }
+
+    .room__text{
+        line-height: 2;
+        font-size: 10.5px;
+    }
 }
