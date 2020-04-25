@@ -5,6 +5,7 @@
     <title>Hotel Bayview</title>
     <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Roboto:wght@400;900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="header">
@@ -12,9 +13,9 @@
             <img src="images/logo.svg" alt="Hotel Bayview" width="171">
             <nav>
                 <ul class="header__navigation">
-                    <li>Home</li>
-                    <li>Rooms</li>
-                    <li>Single Room</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="list.html">Rooms</a></li>
+                    <li><a href="room.html"></a>Single Room</li>
                     <li>Booking</li>
                     <li>Out news</li>
                     <li>Contact</li>
@@ -26,7 +27,7 @@
         <section class="intro">
             <h3 class="subtitle">Luxury hotel &amp;&nbsp;best resort</h3>
             <h1 class="intro__title">Enjoy a&nbsp;luxury experience</h1>
-            <button class="button">Rooms &amp;&nbsp;Suites</button>
+            <a class="button" href="list.html">Rooms &amp;&nbsp;Suites</a>
             <form class="intro__form">
                 <div class="intro__input intro__input_first">
                     <span class="intro__text">Check-in</span>
@@ -52,7 +53,7 @@
                         <input type="text" class="intro__date">
                     </div>
                 </div>
-                <button class="intro__button">Check availability</button>
+                <a class="intro__button" href="list.html">Check availability</a>
             </form>
         </section>
         <section class="about">
@@ -67,9 +68,9 @@
                 </button>
             </div>
             <div class="about__images">
-                <img src="images/main1.png" alt="" class="about__img1">
-                <img src="images/main2.png" alt="" class="about__img2">
-                <img src="images/main3.png" alt="" class="about__img3">
+                <img src="images/main/main1.png" alt="" class="about__img1">
+                <img src="images/main/main2.png" alt="" class="about__img2">
+                <img src="images/main/main3.png" alt="" class="about__img3">
             </div>
         </section>
         <section class="rooms__container">
@@ -82,48 +83,58 @@
                 <div class="rooms_list">
                     <ul>
                         <li class="room-big">
-                            <div class="room room_big room_adriatic">
-                                <h4 class="room__title">Adriatic Suite</h4>
-                            </div>
-                            <div class="room__description">
-                                <h5 class="room__subtitle">Adriatic Suite</h5>
-                                <ul class="room__benefits">
-                                    <li class="room__benefit-item">
-                                        <span class="room__rating">7.5</span>
-                                        <span class="room__benefit">5 Reviews</span>
-                                    </li>
-                                    <li class="room__benefit-item">
-                                        <img src="images/user.svg" width="17" alt="">
-                                        <span class="room__benefit">3 guests</span>
-                                    </li>
-                                    <li class="room__benefit-item">
-                                        <img src="images/plan.svg" width="16" alt="">
-                                        <span class="room__benefit">57 m²</span>
-                                    </li>
-                                </ul>
-                                <p class="room__text">
-                                    Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s Main Square and
-                                    the lively waterfront and the main promenade.
-                                </p>
-                                <button class="button button_black">Book now from 300$</button>
-                            </div>
+                            <a href="room.html" class="room-big__link">
+                                <div class="room room_big room_adriatic">
+                                    <h4 class="room__title">Adriatic Suite</h4>
+                                </div>
+                                <div class="room__description room__description_big">
+                                    <h5 class="room__subtitle">Adriatic Suite</h5>
+                                    <ul class="room__benefits room__benefits_small">
+                                        <li class="room__benefit-item">
+                                            <span class="room__rating">7.5</span>
+                                            <span class="room__benefit">5 Reviews</span>
+                                        </li>
+                                        <li class="room__benefit-item">
+                                            <img src="images/icons/user.svg" width="17" alt="">
+                                            <span class="room__benefit">3 guests</span>
+                                        </li>
+                                        <li class="room__benefit-item">
+                                            <img src="images/icons/plan.svg" width="16" alt="">
+                                            <span class="room__benefit">57 m²</span>
+                                        </li>
+                                    </ul>
+                                    <p class="room__text room__text_main">
+                                        Offering 2&nbsp;balconies and views of&nbsp;Rovinj&rsquo;s Main Square and
+                                        the lively waterfront and the main promenade.
+                                    </p>
+                                    <button class="button button_black">Book now from 300$</button>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <div class="room__container">
                         <ul>
                             <li class="room room_small room_atelier">
-                                <h4 class="room__title">Atelier</h4>
+                                <a href="room.html" class="room_link">
+                                    <h4 class="room__title">Atelier</h4>
+                                </a>
                             </li>
                             <li class="room room_small room_gallery">
-                                <h4 class="room__title">Gallery</h4>
+                                <a href="room.html" class="room_link">
+                                    <h4 class="room__title">Gallery</h4>
+                                </a>
                             </li>
                         </ul>
                         <ul>
                             <li class="room room_small room_piazza">
-                                <h4 class="room__title">Piazza</h4>
+                                <a href="room.html" class="room_link">
+                                    <h4 class="room__title">Piazza</h4>
+                                </a>
                             </li>
                             <li class="room room_small room_grand_piazza">
-                                <h4 class="room__title">Grand Piazza Suite</h4>
+                                <a href="room.html" class="room_link">
+                                    <h4 class="room__title">Grand Piazza Suite</h4>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -167,21 +178,11 @@
     </main>
     <footer class="footer">
         <ul class="footer__menu">
-            <li>
-                Home
-            </li>
-            <li>
-                About Us
-            </li>
-            <li>
-                About Us
-            </li>
-            <li>
-                Booking
-            </li>
-            <li>
-                Contact
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+            <li>About Us</li>
+            <li>Booking</li>
+            <li>Contact</li>
         </ul>
     </footer>
 </body>

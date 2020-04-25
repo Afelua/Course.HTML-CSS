@@ -1,0 +1,183 @@
+.search-intro{
+    background: url("images/background/background-search.jpg") 50% 100% no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 70px 0;
+    height: 150px;
+}
+
+.search-intro__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 52.5px;
+    margin: 28px auto 30px;
+    line-height: 1.3;
+}
+
+.search{
+    display: flex;
+    max-width: 880px;
+    margin: 32px auto 77px;
+}
+
+.search__right{
+    display: flex;
+    margin: 0 0 0 25px;
+}
+
+.form{
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 37px 32px 32px;
+    box-sizing: border-box;
+    width: 278px;
+}
+
+.form__container{
+    display: flex;
+    margin: 50px auto 0;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form__label{
+    font-size: 10px;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 0.72px;
+}
+
+.form__row{
+    display: flex;
+    margin: 0 0 40px 0;
+}
+
+.form__month{
+    font-size: 9px;
+    font-family: 'Gilda Display', serif;
+    border: none;
+    background: transparent;
+    margin: 5px 0 0 -4px;
+    color: #c19b76;
+}
+
+.form__input{
+    font-size: 37.5px;
+    color: #c19b76;
+    border: none;
+    font-family: 'Gilda Display', serif;
+    width: 40px;
+    background: transparent;
+    line-height: 1.5;
+    padding: 0 0 0 12px;
+}
+
+.form__input::placeholder {
+    color: #c19b76;
+}
+
+.filter{
+    color: #1c1c1c;
+    margin: 18px 0 0 0;
+}
+
+.filter-item{
+    border-bottom: 1px solid #f9f9f9;
+    border-top: 1px solid #f9f9f9;
+    padding: 24px 0 14px;
+}
+
+.filter-item_room{
+    padding: 24px 0 30px;
+}
+
+.filter-item__title{
+    font-size: 20px;
+}
+
+.filter-item__row{
+    display: flex;
+    color: #878787;
+    font-size: 10.5px;
+    line-height: 2;
+    margin: 8px 0;
+    justify-content: space-between;
+    width: 94%;
+}
+
+.size{
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #878787;
+}
+
+.size__input{
+    color: #ffffff;
+    background: #1c1c1c;
+    font-size: 9.5px;
+    width: 47px;
+    border: none;
+    height: 23px;
+    margin: 14px 0 0 2px;
+    padding: 0 0 0 7px;
+    box-sizing: border-box;
+}
+
+.size__input::placeholder{
+    color: #ffffff;
+}
+
+.size__input_from{
+    margin: 14px 9px 0 2px;
+}
+
+.size__input_to{
+    margin: 14px 10px 0 6px;
+}
+
+.services__item{
+    margin: 0 0 0 1px;
+}
+
+.services__checkbox{
+    width: 10px;
+    height: 10px;
+    border-radius: 1.1px;
+    border: solid 0.4px #b3b3b3;
+    margin: 0;
+}
+
+.services__label{
+    letter-spacing: 0.63px;
+    padding: 0 0 0 8px;
+}
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+    margin: 13px 0;
+    width: 84%;
+}
+
+.reviews__item{
+    width: 30px;
+    color: #ffffff;
+    background: #1c1c1c;
+    font-size: 9.5px;
+    transition: all 0.3s;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.reviews__item:hover{
+    background: #c19b76;
+}
+
+.search__title{
+    font-family: 'Gilda Display', serif;
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: 0.9px;
+}
