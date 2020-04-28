@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__container">
-            <img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo">
+            <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo"></a>
             <nav>
-                <img src="images/menu.svg" width="26" class="header__menu" />
+                <img src="images/menu.svg" width="26" class="header__menu" onclick="changeNav()"/>
+                <img src="images/close.svg" width="19" class="header__close" onclick="changeNav()"/>
                 <ul class="header__navigation">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="list.html">Rooms</a></li>
-                    <li><a href="room.html"></a>Single Room</li>
-                    <li>Booking</li>
-                    <li>Out news</li>
-                    <li>Contact</li>
+                    <li><a href="room.html">Single Room</a></li>
+                    <li><a href="">Booking</a></li>
+                    <li><a href="">Out news</a></li>
+                    <li><a href="">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="intro">
+        <section class="intro" data-speed="10" data-type="background">
             <h3 class="subtitle">Luxury hotel &amp;&nbsp;best resort</h3>
             <h1 class="intro__title">Enjoy a&nbsp;luxury experience</h1>
             <a class="button" href="list.html">Rooms &amp;&nbsp;Suites</a>
@@ -180,11 +181,13 @@
     <footer class="footer">
         <ul class="footer__menu">
             <li><a href="index.html">Home</a></li>
-            <li>Services</li>
-            <li>About Us</li>
-            <li>Booking</li>
-            <li>Contact</li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Booking</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

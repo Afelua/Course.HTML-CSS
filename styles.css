@@ -4,10 +4,17 @@ body{
 }
 
 .header{
-    background: #000;
+    background: #1c1c1c;
     color: #878787;
     font-size: 14px;
     line-height: 2;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+}
+
+.header:not(.header_open) .header__close{
+    display: none;
 }
 
 .header__container{
@@ -24,9 +31,19 @@ body{
     margin: -2px 10px 0 0;
 }
 
+.header__link{
+    display: block;
+}
+
 .header__navigation a{
     text-decoration: none;
-    color: #878787;
+    transition: all 0.3s;
+}
+
+.header__navigation a:hover{
+    color: #fff;
+    padding: 0 0 2px 0;
+    border-bottom: 1px solid #fff;
 }
 
 .room{
@@ -35,14 +52,47 @@ body{
     text-decoration: none;
 }
 
+.room_big{
+    position: relative;
+}
+
+.room_big:before, .room_middle:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, #1c1c1c, rgba(28, 28, 28, 0.5));
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.room_small, .room_middle{
+    position: relative;
+}
+
+.room_small:hover{
+    cursor: pointer;
+}
+
+.room_small:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, #1c1c1c, rgba(28, 28, 28, 0.5));
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
 .room_page{
     width: 578px;
-    height: 281px;
 }
 
 .room_adriatic{
     background: url("images/rooms/adriatic.png");
-    background-size: contain;
+    background-size: cover;
 }
 
 .room_atelier{
@@ -113,6 +163,7 @@ body{
 .subtitle{
     line-height: 2;
     text-transform: uppercase;
+    position: relative;
 }
 
 .short-info{
@@ -135,6 +186,13 @@ body{
 .footer__menu a{
     color: #fff;
     text-decoration: none;
+    transition: all 0.3s;
+    padding: 2px 0 0;
+
+}
+
+.footer__menu a:hover{
+    border-bottom: 1px solid #fff;
 }
 
 .subtitle_white{
@@ -153,12 +211,30 @@ body{
     font-weight: 900;
     letter-spacing: 0.85px;
     text-decoration: none;
+    transition: 0.3s;
+    position: relative;
 }
 
+.button:focus{
+    outline: none;
+}
+
+.button:hover{
+    border: 2px solid #c19b76;
+    background: #c19b76;
+    cursor: pointer;
+    color: #fff;
+}
 
 .button_yellow{
     border: 2px solid #c19b76;
     background: #c19b76;
+}
+
+.button_yellow:hover{
+    border: 2px solid #c19b76;
+    color: #c19b76;
+    background: transparent;
 }
 
 .button_black{
@@ -176,8 +252,26 @@ body{
 }
 
 @media screen and (max-width: 1023px) {
+
     .header__navigation{
-        display: none;
+        flex-direction: column;
+        text-transform: uppercase;
+        text-align: right;
+        width: 195px;
+        margin: 32px 0 0;
+        font-size: 14px;
+        padding: 0 8px 0 0;
+        transition: all 0.3s;
+    }
+
+    .header__navigation li {
+        border-bottom: 5px solid #c19b76;
+        padding: 0 0 5px 0;
+        margin: 3px 0 0 0;
+    }
+
+    .header__navigation a{
+        color: #fff;
     }
 
     .header__logo{
@@ -186,6 +280,23 @@ body{
 
     .header{
         height: 36px;
+        transition: all 0.3s;
+    }
+
+    .header:not(.header_open) .header__navigation{
+        opacity: 0;
+    }
+
+    .header_open .header__navigation {
+        opacity: 1;
+    }
+
+    .header_open{
+        height: 335px;
+    }
+
+    .header_open .header__menu{
+        display: none;
     }
 
     .header__container{
@@ -197,6 +308,12 @@ body{
         position: absolute;
         right: 55px;
         top: 8px;
+    }
+
+    .header__close{
+        position: absolute;
+        right: 58px;
+        top: 11px;
     }
 
     .button{
@@ -260,27 +377,27 @@ body{
         display: none;
     }
 
+    .header__navigation a{
+        color: #878787;
+    }
+
     .short-info{
         line-height: 1.8;
         width: 700px;
     }
 
-    .footer__menu{
-        width: 330px;
-    }
-
     .room__text_list{
         margin: 14px 0;
     }
 
-    .room__text_list{
-        margin: 14px 0;
+    .room_page{
+        height: 281px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .header{
-        padding: 13px 0 6px;
+        padding: 17px 0 12px;
     }
 
     .header__container{
@@ -316,8 +433,8 @@ body{
     }
 
     .room__title{
-        bottom: 9px;
-        left: 15px;
+        bottom: 13px;
+        left: 20px;
     }
 
     .room__description_big{
@@ -375,11 +492,10 @@ body{
     .room_border{
         margin: 0 14px 20px 0;
         width: 198px;
-        min-height: 321px;
     }
 
     .room__description_small{
-        padding: 14px 15px 28px;
+        padding: 14px 15px 24px;
     }
 
     .room__benefits{
@@ -402,12 +518,18 @@ body{
         line-height: 2.3;
     }
 
+    .room__text_list{
+        width: 90%;
+    }
 
+    .footer__menu{
+        width: 350px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .header{
-        padding: 13px 0;
+        padding: 17px 0 10px;
     }
 
     .header__container{
@@ -415,13 +537,13 @@ body{
     }
 
     .header__logo{
-        width: 122px;
-        height: 17px;
+        width: 172px;
+        height: 25px;
     }
 
     .header__navigation{
-        width: 438px;
-        margin: -4px 0 0 0;
+        width: 444px;
+        margin: -4px 7px 0 0;
     }
 
     .subtitle{
@@ -515,5 +637,9 @@ body{
     .room__text{
         line-height: 2;
         font-size: 10.5px;
+    }
+
+    .footer__menu{
+        width: 332px;
     }
 }

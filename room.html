@@ -9,33 +9,34 @@
     <link rel="stylesheet" href="room.css">
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="header__container">
-        <img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo">
+        <a href="index.html" class="header__logo"><img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo"></a>
         <nav>
-            <img src="images/menu.svg" width="26" class="header__menu" />
+            <img src="images/menu.svg" width="26" class="header__menu" onclick="changeNav()"/>
+            <img src="images/close.svg" width="19" class="header__close" onclick="changeNav()"/>
             <ul class="header__navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="list.html">Rooms</a></li>
-                <li><a href="room.html"></a>Single Room</li>
-                <li>Booking</li>
-                <li>Out news</li>
-                <li>Contact</li>
+                <li><a href="room.html">Single Room</a></li>
+                <li><a href="">Booking</a></li>
+                <li><a href="">Out news</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <section class="room-intro">
+    <section class="room-intro" data-speed="10" data-type="background">
         <h1 class="room-intro__title">Adriatic Suite</h1>
         <div class="room-intro__container">
             <div class="room-intro__text">
                 <ul class="room-intro__navigation">
-                    <li>Description</li>
-                    <li>Room services</li>
-                    <li>Extra services</li>
-                    <li>Gallery</li>
-                    <li>Reviews</li>
+                    <li><a href="">Description</a></li>
+                    <li><a href="">Room services</a></li>
+                    <li><a href="">Extra services</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Reviews</a></li>
                 </ul>
                 <h4 class="room-intro__description">
                     <span class="room-intro__money">300</span>
@@ -149,11 +150,12 @@
 <footer class="footer">
     <ul class="footer__menu">
         <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
-        <li>About Us</li>
-        <li>Booking</li>
-        <li>Contact</li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

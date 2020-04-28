@@ -1,14 +1,25 @@
 .search-intro{
-    background: url("images/background/background-search.jpg") 50% 100% no-repeat;
+    background: url("images/background/background-search.jpg") 0 0% no-repeat fixed;
     background-size: cover;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+    position: relative;
+}
+
+.search-intro:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(28, 28, 28, 0.2), rgba(28, 28, 28, 0.2));
+    width: 100%;
+    top: -70px;
 }
 
 .search-intro__title{
     font-family: 'Gilda Display', serif;
     line-height: 1.3;
+    position: relative;
 }
 
 .form{
@@ -36,11 +47,18 @@
     color: #c19b76;
 }
 
+.form__month:focus{
+    outline: none;
+}
 .form__input{
     color: #c19b76;
     border: none;
     font-family: 'Gilda Display', serif;
     background: transparent;
+}
+
+.form__input:focus{
+    outline: none;
 }
 
 .form__input::placeholder {
@@ -76,14 +94,48 @@
     box-sizing: border-box;
 }
 
+.size__input:focus{
+    outline: none;
+}
+
 .size__input::placeholder{
     color: #ffffff;
 }
 
+.services__item{
+    margin: 0 0 0 2px;
+}
+
 .services__checkbox{
-    border-radius: 1.1px;
-    border: solid 0.4px #b3b3b3;
     margin: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.services__checkbox + label {
+    position: relative;
+    cursor: pointer;
+}
+
+.services__checkbox + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.1px;
+    border: solid 1px #b3b3b3;
+    transition: .2s;
+}
+
+.services__checkbox:checked + label:after {
+    background: #c19b76;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 3px;
+    height: 3px;
 }
 
 .services__label{
@@ -104,6 +156,7 @@
 
 .reviews__item:hover{
     background: #c19b76;
+    cursor: pointer;
 }
 
 .search__title{
@@ -114,17 +167,26 @@
 
 @media screen and (max-width: 1023px) {
     .search-intro{
-        height: 205px;
+        height: 240px;
+    }
+
+    .search-intro:before{
+        height: 310px;
     }
 
     .search-intro__title{
         font-size: 48px;
-        padding: 70px 0;
+        padding: 105px 0 75px;
+    }
+
+    .services__checkbox + label:before {
+        width: 14px;
+        height: 14px;
     }
 
     .form{
         width: 82%;
-        margin: 30px auto;
+        margin: 32px auto 28px;
         padding: 10px 10px;
     }
 
@@ -194,17 +256,13 @@
         font-size: 20px;
     }
 
-    .services__item{
-        margin: 0 0 4px 0;
-    }
-
-    .services__checkbox{
-        width: 14px;
-        height: 14px;
-    }
 
     .services__label{
-        padding: 0 0 0 5px;
+        padding: 0 0 0 22px;
+    }
+
+    .services__item {
+        margin: 0 0 4px 2px;
     }
 
     .filter-item_room{
@@ -273,6 +331,11 @@
         margin: 32px auto 77px;
     }
 
+    .services__checkbox + label:before {
+        width: 9px;
+        height: 9px;
+    }
+
     .search__right{
         display: flex;
     }
@@ -303,15 +366,6 @@
         border-top: 1px solid #f9f9f9;
     }
 
-    .services__item{
-        margin: 0 0 0 1px;
-    }
-
-    .services__checkbox{
-        width: 10px;
-        height: 10px;
-    }
-
     .filter-item_room{
         padding: 24px 0 30px;
     }
@@ -330,7 +384,11 @@
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .search-intro{
         height: 46px;
-        padding: 50px 0;
+        padding: 93px 0 48px;
+    }
+
+    .search-intro:before{
+        height: 258px;
     }
 
     .search-intro__title{
@@ -340,11 +398,10 @@
 
     .search{
         max-width: 625px;
-        margin: 35px auto 77px;
     }
 
     .form{
-        width: 208px;
+        width: 210px;
         padding: 25px 20px 22px;
     }
 
@@ -376,7 +433,7 @@
     }
 
     .services__label{
-        padding: 0 0 0 3px;
+        padding: 0 0 0 15px;
     }
 
     .size{
@@ -406,14 +463,18 @@
     }
 
     .search__right{
-        margin: 0 0 0 15px;
+        margin: 0 0 0 12px;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .search-intro{
-        padding: 70px 0;
+        padding: 120px 0 75px;
         height: 150px;
+    }
+
+    .search-intro:before{
+        height: 415px;
     }
 
     .search-intro__title{
@@ -455,6 +516,10 @@
         padding: 24px 0 14px;
     }
 
+    .filter-item_reviews{
+        padding: 40px 0 14px;
+    }
+
     .filter-item__row{
         font-size: 10.5px;
         margin: 8px 0;
@@ -462,7 +527,7 @@
     }
 
     .services__label{
-        padding: 0 0 0 8px;
+        padding: 0 0 0 19px;
     }
 
     .size{
@@ -489,7 +554,7 @@
     }
 
     .search__right{
-        margin: 0 0 0 25px;
+        margin: 0 0 0 23px;
     }
 
 }

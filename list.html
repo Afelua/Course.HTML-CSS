@@ -9,24 +9,26 @@
     <link rel="stylesheet" href="list.css">
 </head>
 <body>
-<header class="header">
+<header class="header" id="header">
     <div class="header__container">
-        <img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo">
+        <a href="index.html" class="header__logo">
+            <img src="images/logo.svg" alt="Hotel Bayview" width="171" class="header__logo"></a>
         <nav>
-            <img src="images/menu.svg" width="26" class="header__menu" />
+            <img src="images/menu.svg" width="26" class="header__menu" onclick="changeNav()"/>
+            <img src="images/close.svg" width="19" class="header__close" onclick="changeNav()"/>
             <ul class="header__navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="list.html">Rooms</a></li>
-                <li><a href="room.html"></a>Single Room</li>
-                <li>Booking</li>
-                <li>Out news</li>
-                <li>Contact</li>
+                <li><a href="room.html">Single Room</a></li>
+                <li><a href="">Booking</a></li>
+                <li><a href="">Out news</a></li>
+                <li><a href="">Contact</a></li>
             </ul>
         </nav>
     </div>
 </header>
 <main>
-    <section class="search-intro">
+    <section class="search-intro" data-speed="10" data-type="background">
         <h1 class="search-intro__title">Search</h1>
     </section>
     <section class="search">
@@ -102,7 +104,7 @@
                     </div>
 
                 </div>
-                <div class="filter-item">
+                <div class="filter-item filter-item_reviews">
                     <h2 class="search__title">Reviews</h2>
                     <div class="reviews">
                         <span class="reviews__item">0.0</span>
@@ -236,11 +238,13 @@
 <footer class="footer">
     <ul class="footer__menu">
         <li><a href="index.html">Home</a></li>
-        <li>About Us</li>
-        <li>About Us</li>
-        <li>Booking</li>
-        <li>Contact</li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
     </ul>
 </footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
