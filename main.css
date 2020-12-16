@@ -1,14 +1,11 @@
 .intro{
-    color: #fff;
+    color: red;
     text-transform: uppercase;
     text-align: center;
     background: url("images/background/background.png") 0 0 fixed no-repeat;
     background-size: cover;
     position: relative;
 }
-
-
-
 
 .intro:before{
     content: '';
